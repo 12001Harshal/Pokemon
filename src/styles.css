@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+body{
+  margin: 0;
+  font-family: "Poppins" sans-serif;
+  display: flex;
+   background: #000; 
+  min-height: 100vh;
+  justify-content:center;
+  align-items: center;
+  /* -webkit-font-smothing:antialiased;
+  -moz-osx-font-smothing:grayscale; */
+}
+#parent{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+
+}
+#section{
+  position: relative;
+  width:100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+}
+.content1,
+.content2{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  font-size: 4rem;
+}
+.content1 h2{
+  right: 5%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color:#fff;
+  position:absolute;
+  margin-right:0;
+}
+.content2 h2{
+  left:5%;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  position:absolute;
+  margin-right:0;
+  color:white;
+}
+/* strok down there*/
+.content1 h2:nth-child(1){
+  -webkit-text-stroke: animate 4s ease-in-out infinite;
+}
+
+.app-container{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction:column;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0rem 1rem;
+}
+.pokemon-container{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+
+}
+.thumb-container{
+  display: flex;
+  position: relative;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:1.5rem 0.2rem;
+  margin:0.3rem;
+  border:1px solid #efefef;
+  border-radius: 1px;
+  min-width: 160px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 13px 15px rgba(0,0,0,0.01);
+  transition: transform 0.3s ease-in-out;
+  
+}
+.thumb-container:hover{
+  z-index:1;
+  transform: scale(1.2);
+  border-radius: 5px;
+  
+}
+.thumb-container .number{
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.thumb-container img{
+  height: 120px;
+  width: 120px;
+}
+h3{
+text-transform: uppercase;
+text-decoration: underline;
+}
+
+.grass{
+  background-image: linear-gradient(120deg,#d4fc79 0%,#96e6a1 100%);
+}
+.load-more {
+  background: "#76daff";
+  background-image: linear-gradient(315deg, #76daff, #fcd000 74%);
+  padding: 0.6rem 1.8rem;
+  margin: 1rem 0rem;
+  color: #444;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ghost{
+  background-image:linear-gradient(to top,#b7b7b8 0%,#e2ebf0 100%)
+}
+.ghost button{
+  background-image:linear-gradient(100deg,#b7b7b8 0%,#5e5e60 100%)
+}
+.ghost button:hover{
+  background-image:linear-gradient(to top,#5e5e60 0%, #b7b7b8 100%)
+}
+.electric{
+  background-image: linear-gradient(to top,#f83600 0%,#f9d423 100%);
+}
+.electric button{
+  background-image: linear-gradient(100deg,#f83600 0%,#f9d423 100%);
+}
+.electric button:hover{
+  background-image: linear-gradient(to top,#f9d423 0%,#f83600 100%);
+}
+.bug{
+  background-image: linear-gradient(to top,#e6b980 0%,#eacda3 100%);
+}
+.bug button{
+  background-image: linear-gradient(100deg,#e0b174 0%,#b37e34 100%);
+}
+.bug button:hover{
+  background-image: linear-gradient(100deg,#de9e43 0%,#bd8c4b 100%);
+}
+.poison{
+  background-image: linear-gradient(to top,#df89b5 0%,#bfd9fe 100%);
+}
+.poison button{
+  background-image: linear-gradient(100deg,#cf7ba7 0%,#b1d0fb 100%);
+}
+.poison button:hover{
+  background-image: linear-gradient(100deg,#b1d0fb 0%,#cf7ba7 100%);
+}
+.normal{
+  background-image: linear-gradient(to top,#e3fdf5 0%,#ffe6fa 100%);
+}
+.normal button{
+  background-image: linear-gradient(100deg,#e3fdf5 0%,#ffe6fa 100%);
+}
+.normal button:hover{
+  background-image: linear-gradient(100deg,#e9c7e2 0%,#e9c2dc 100%);
+}
+.fairy{
+  background-image: linear-gradient(to top,#ff9a9e 0%,#ecaed8 100%);
+
+}
+.fairy button{
+  background-image: linear-gradient(100deg,#f5878a 0%,#f5bae2 100%);
+
+}
+.fairy button:hover{
+  background-image: linear-gradient(100deg,#eaafd8 0%,#f59296 100%);
+
+}
+.fire{
+background-image: linear-gradient(to top , #f6d365 0%,#fda085 100% );
+}
+.fire button{
+  background-image: linear-gradient(100deg , #f5d059 0%,#f17f60 100% );
+ }
+  .fire button:hover{
+    background-image: linear-gradient(100deg , #ec6945 0%,#e7c451 100% );
+    }
+.water{
+background-image: linear-gradient(to top ,#f6d365 0%,#66a6ff 100% );
+
+}
+.water button{
+  background-image: linear-gradient(100deg ,#f6d365 0%,#66a6ff 100% );
+  
+  }
+  .water button:hover{
+    background-image: linear-gradient(100deg ,#66a6ff 0%,#f6d365 100% );
+    
+    }
+.ground{
+background-image: linear-gradient(to top , #772f1a 0%,#3c18e3 100% );
+
+}
+.ground button{
+  background-image: linear-gradient(100deg , #772f1a 0%,#3c18e3 100% );
+  
+  }
+  .ground button:hover{
+    background-image: linear-gradient(100deg , #3a0ff8 0%,#772f1a  100% );
+    
+    }
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+.content1 h2:nth-child(1) {
+  -webkit-text-stroke: 2px white;
+}
+
+.content1 h2:nth-child(2) {
+  color: black;
+  animation: animate 4s ease-in-out infinite;
+}
+
+.content2 h2:nth-child(1) {
+  -webkit-text-stroke: 2px white;
+}
+
+.content2 h2:nth-child(2) {
+  color: black;
+  animation: animate 4s ease-in-out infinite;
+}
+.detail-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.detail-wrapper button{
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin: 0.8rem 0.8rem;
+  color: rgb(22, 22, 22);
+}
+.grass button{
+  background-image: linear-gradient(100deg,#adee16,#1aca32);
+}
+.grass button:hover{
+  background-image: linear-gradient(100deg,#1aca32,#adee16);
+}
+.overlay{
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+  max-width: 100%;
+  position: fixed ;
+  top:50%;
+  left:50%;
+  border:2px solid black;
+  min-width: height 30px;
+  max-height: 120%;
+  transform: translate(-50%,-50%);
+  transform-origin: 50% 50%;
+  z-index: 9;
+}
+.left-overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+.left-overlay-img{
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.left-overlay-name{
+  font-size: 1.5rem;
+}
+.right-overlay{
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+
+}
+.closeBtn{
+  position: absolute;
+  top:1rem;
+  right: 1rem;
+  color:black;
+  font-weight: bolder;
+  border:none;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+.right-overlay-tabel{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
